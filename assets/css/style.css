@@ -1,0 +1,359 @@
+/* main start */
+.mainBlock {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.container {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+/* main end */
+
+/* topbar start */
+.topOverview {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+}
+.iconTop {
+    width: 40px;
+}
+
+.search:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s, border-color 0.3s, border-width 0.3s;
+}
+
+.notification:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s, border-color 0.3s, border-width 0.3s;
+}
+
+.profile:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s, border-color 0.3s, border-width 0.3s;
+}
+
+.mainBlock .row .col-10 {
+    position: absolute;
+    height: 200%;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: #F7F8FC;
+}
+
+.container .row .col-8 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.row .align-items-start {
+    font-weight: 200;
+    font-size: 15px;
+    background-color: white;
+}
+/* topbar end */
+
+/* four boxes start */
+.col-sm-3 {
+    margin: 0px;
+    height: 300px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-width: 1.5px;
+    border-color: #a0a2ab;
+    border-radius: 10px;
+    border-style: solid;
+    height: 100%;
+    padding: 30px;
+    font-size: 20px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.titelText {
+    color: #8a8c95;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.col-6.col-sm-3 .col-12 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.col-6.col-sm-3:hover {
+    border-width: 1.5px !important;
+    border-color: blue !important;
+    transform: scale(1.05);
+    transition: transform 0.3s, border-color 0.3s, border-width 0.3s;
+    border-style: solid;
+}
+/* four boxes end */
+
+/* sidebar start */
+.sideBar {
+    position: absolute;
+    width: 255px;
+    height: 200%;
+    left: 0;
+    top: 0;
+    background: #363740;
+}
+/* dashboardKit start */
+.dashboardKit {
+    margin: 40px 0px 20px 10px;
+    font-size: 25px;
+}
+
+.dashboardKit .icon {
+    width: 40px;
+    height: auto;
+}
+
+/* dashboardKit end */
+
+.Articles {
+    margin-bottom: 20px;
+}
+/* sidebar end */
+
+
+/* graphicColumn start */
+.listGroup {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    color: #A4A6B3;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.listGroup-item {
+    padding: 10px 0;
+    position: relative;
+    display: block;
+    margin-right: 10px;
+}
+
+.w-100{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.listGroup-item .icon {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.listGroup-item:hover {
+    background-color: #5a5c68;
+}
+
+.Mainbox {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 40px;
+    border-color: #a0a2ab;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1.5px;
+}
+
+.dateTime {
+    color: #a0a2ab;
+    font-size: 13px;
+}
+
+.stats {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.stat-item:last-child {
+    border-bottom: none;
+}
+
+.stat-title {
+    font-weight: bold;
+    font-size: 17px;
+    color:#a0a2ab ;
+}
+.stat-number{
+    font-size: 30px;
+}
+
+.stats .stat-item .stat-title {
+    color: #6c757d;
+}
+
+.stats .stat-item div {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.stats .stat-item .stat-title a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.stats .stat-item .stat-title a:hover {
+    text-decoration: underline;
+}
+/* graphicColumn end */
+
+
+
+/* Two Box Below start */
+.TwoBox {
+    margin-top: 30px;
+}
+
+/* Unresolved tickets start */
+.TicketBox {
+    background-color: #ffffff;
+    height: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-color: #a0a2ab;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1.5px;
+    text-align: left;
+    position: relative;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-weight: 400;
+}
+.TicketBoxContent li {
+    position: relative; 
+    margin-bottom: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+}
+.TicketBoxContent li .item-number {
+    font-weight: 400;
+    color: #a0a2ab;
+}
+
+.ticket-text {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.view-details {
+    position: absolute;
+    right: 10px;
+    top: 12%;
+    transform: translateY(-50%);
+    color: #007bff;
+    font-weight: 600;
+}
+.view-details:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s, border-color 0.3s, border-width 0.3s;
+}
+.groupSupport {
+    color: #a0a2ab;
+    font-size: 10px;
+    font-weight: 300;
+    padding-bottom:20px;
+}
+
+.TicketBoxContent {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Unresolved tickets end */
+
+/* task start */
+
+.task-text {
+    display: inline-block;
+    font-weight: 600;
+}
+.TaskBoxContent li {
+    position: relative; 
+    margin-bottom: 10px; 
+}
+
+.TaskBox {
+    background-color: #ffffff;
+    height: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-color: #A4A6B3;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1.5px;
+    text-align: left;
+    position: relative;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-weight: 400;
+    display: block;
+}
+.checkIcon{
+    width: 20px;
+    margin-right: 10px; 
+}
+
+.createTask{
+    color: #a0a2ab !important;
+    font-weight: 400;
+}
+.today {
+    color: #a0a2ab;
+    font-size: 10px;
+    font-weight: 300;
+    padding-bottom:20px;
+}
+
+.view-all {
+    position: absolute;
+    right: 10px;
+    top: 12%;
+    transform: translateY(-50%);
+    color: #007bff;
+    font-weight: 600;
+}
+.view-all:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s, border-color 0.3s, border-width 0.3s;
+}
+
+/* task end */
+
+/* Two Box Below end */

@@ -1,0 +1,24 @@
+{
+    "ticketBox": {
+        "title": "Unresolved tickets",
+        "viewDetailsText": "View details",
+        "groupSupportText": "Group: Support",
+        "tickets": [
+            { "text": "Waiting on Feature Request", "number": 4238 },
+            { "text": "Awaiting Customer Response", "number": 1005 },
+            { "text": "Awaiting Developer Fix", "number": 914 },
+            { "text": "Pending", "number": 281 }
+        ]
+    },
+    "taskBox": {
+        "title": "Tasks",
+        "viewAllText": "View all",
+        "todayText": "Today",
+        "tasks": [
+            { "text": "Create new task", "icon": "add.png" },
+            { "text": "Finish ticket update", "icon": "urgent.png" },
+            { "text": "Create new ticket example", "icon": "new.png" },
+            { "text": "Update ticket report", "icon": "default.png" }
+        ]
+    }
+}

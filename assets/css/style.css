@@ -103,6 +103,7 @@
     transition: transform 0.3s, border-color 0.3s, border-width 0.3s;
     border-style: solid;
 }
+
 /* four boxes end */
 
 /* sidebar start */
@@ -293,6 +294,28 @@
     padding: 0;
     margin: 0;
 }
+.TaskBoxContent .list-group-item, 
+.TicketBoxContent .list-group-item {
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+
+.TaskBoxContent .list-group-item:hover {
+    background-color: #f0f0f0; 
+    transform: scale(1.02); 
+}
+
+
+.TicketBoxContent .list-group-item:hover {
+    background-color: #e0e0e0; 
+    transform: scale(1.02); 
+}
+
+
+.TaskBoxContent .list-group-item:hover, 
+.TicketBoxContent .list-group-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
 
 
 /* Unresolved tickets end */
@@ -303,9 +326,13 @@
     display: inline-block;
     font-weight: 600;
 }
+
 .TaskBoxContent li {
     position: relative; 
     margin-bottom: 10px; 
+    display: flex; 
+    align-items: center;
+    padding-right: 40px; /* Add padding to ensure space for the icon */
 }
 
 .TaskBox {
@@ -325,20 +352,24 @@
     font-weight: 400;
     display: block;
 }
-.checkIcon{
-    width: 20px;
-    margin-right: 10px; 
+
+.checkIcon {
+    width: 40px;
+    position: absolute; 
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
 }
 
-.createTask{
+.createTask {
     color: #a0a2ab !important;
     font-weight: 400;
 }
+
 .today {
     color: #a0a2ab;
     font-size: 10px;
     font-weight: 300;
-    padding-bottom:20px;
 }
 
 .view-all {
@@ -349,9 +380,52 @@
     color: #007bff;
     font-weight: 600;
 }
-.view-all:hover{
+
+.view-all:hover {
     transform: scale(1.05);
     transition: transform 0.3s, border-color 0.3s, border-width 0.3s;
+}
+
+.TaskBoxContent .list-group-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px; 
+    position: relative; 
+}
+
+label {
+    margin-right: 10px; 
+    cursor: pointer;   
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #000; 
+    appearance: none; 
+    -webkit-appearance: none; 
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #000; 
+}
+
+input[type="checkbox"]:checked::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff; /* Checkmark color */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* task end */

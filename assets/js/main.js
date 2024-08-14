@@ -1,3 +1,7 @@
+// title
+console.log('%cHeadlessCMS', 'background: blue; font-size:20px; color:white; font-family:arial');
+
+// XHR to load JSON data
 document.addEventListener('DOMContentLoaded', function () {
     // Create and send an XHR request to get the JSON data
     const xhr = new XMLHttpRequest();
@@ -75,17 +79,12 @@ document.addEventListener('DOMContentLoaded', function () {
                         alert(`${number}!`);
                     });
                 });
-
                 // Handle notification click sound
                 const notificationIcon = document.getElementById('notificationIcon');
-                if (notificationIcon) {
-                    const notificationSound = new Audio('assets/sounds/notification-sound.wav'); 
-                    notificationIcon.addEventListener('click', function () {
-                        notificationSound.play(); // Play sound on click
-                    });
-                } else {
-                    console.warn('Notification icon not found');
-                }
+                const notificationSound = new Audio('/assets/sound/notification-sound.wav');  // Load sound file
+                notificationIcon.addEventListener('click', function () {
+                    notificationSound.play(); // Play sound on click
+                });
 
             } catch (error) {
                 console.warn(`Error parsing JSON: ${error}`);

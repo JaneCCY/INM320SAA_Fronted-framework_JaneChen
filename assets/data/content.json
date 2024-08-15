@@ -20,5 +20,26 @@
             { "text": "Create new ticket example", "icon": "new.png" },
             { "text": "Update ticket report", "icon": "default.png" }
         ]
+    },
+    "infoCard": {
+        "siteName": "Contact Info",
+        "name": "Name: Jane Chen",
+        "phone": "Phone Number: 437-123-1234",
+        "address": "Address: Yonge Street",
+        "mainNav": [
+            {
+                "text": "Portfolio",
+                "url": "https://www.behance.net/JYUUUUU",
+                "linkClass": "",
+                "linkID": ""
+            }
+        ]
+    },
+    "infoCard2": {
+        "skill": "Skills",
+        "photo": "Photoshop",
+        "drawing": "illustrator",
+        "edit": "Premiere",
+        "music": "Logic"
     }
 }

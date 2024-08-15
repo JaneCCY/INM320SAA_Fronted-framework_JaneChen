@@ -1,4 +1,4 @@
-// title
+// Log title in the console
 console.log('%cHeadlessCMS', 'background: blue; font-size:20px; color:white; font-family:arial');
 
 // XHR to load JSON data
@@ -79,6 +79,57 @@ document.addEventListener('DOMContentLoaded', function () {
                         alert(`${number}!`);
                     });
                 });
+
+                // Populate Info Card 1
+                const infoCard = data.infoCard;
+                document.querySelector('.info-card .siteName').textContent = infoCard.siteName;
+                document.querySelector('.info-card .name').textContent = infoCard.name;
+                document.querySelector('.info-card .phone').textContent = infoCard.phone;
+                document.querySelector('.info-card .address').textContent = infoCard.address;
+                const mainNav1 = document.querySelector('.info-card .mainNav');
+                mainNav1.innerHTML = '';
+                infoCard.mainNav.forEach(nav => {
+                    const link = document.createElement('a');
+                    link.href = nav.url;
+                    link.textContent = nav.text;
+                    if (nav.newTab) {
+                        link.target = '_blank';
+                    }
+                    mainNav1.appendChild(link);
+                    mainNav1.appendChild(document.createElement('br')); // Add line break for each link
+                });
+
+                // Populate Info Card 2
+                const infoCard2 = data.infoCard2;
+                document.querySelector('.info-card2 .photo').innerHTML = `
+                    <input type="checkbox" id="photoCheckbox" name="photoCheckbox">
+                    <label for="photoCheckbox">${infoCard2.photo}</label>
+                `;
+                document.querySelector('.info-card2 .drawing').innerHTML = `
+                    <input type="checkbox" id="drawingCheckbox" name="drawingCheckbox">
+                    <label for="drawingCheckbox">${infoCard2.drawing}</label>
+                `;
+                document.querySelector('.info-card2 .edit').innerHTML = `
+                    <input type="checkbox" id="editCheckbox" name="editCheckbox">
+                    <label for="editCheckbox">${infoCard2.edit}</label>
+                `;
+                document.querySelector('.info-card2 .music').innerHTML = `
+                    <input type="checkbox" id="musicCheckbox" name="musicCheckbox">
+                    <label for="musicCheckbox">${infoCard2.music}</label>
+                `;
+                const mainNav2 = document.querySelector('.info-card2 .mainNav');
+                mainNav2.innerHTML = '';
+                infoCard2.mainNav.forEach(nav => {
+                    const link = document.createElement('a');
+                    link.href = nav.url;
+                    link.textContent = nav.text;
+                    if (nav.newTab) {
+                        link.target = '_blank';
+                    }
+                    mainNav2.appendChild(link);
+                    mainNav2.appendChild(document.createElement('br')); // Add line break for each link
+                });
+
                 // Handle notification click sound
                 const notificationIcon = document.getElementById('notificationIcon');
                 const notificationSound = new Audio('/assets/sound/notification-sound.wav');  // Load sound file
